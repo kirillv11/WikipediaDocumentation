@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #4A4A4A;
+    font-size: 15px;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #333333;
+}
+
+.logotype {
+    width: 20%;
+    height: auto;
+}
+
+.menu {
+    width: 60%;
+    height: auto;
+}
+
+
+.social_network {
+    width: 20%;
+    height: auto;
+}
+
+a:hover {
+    color: #3e3474;
+}
+a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #4A4A4A;
+}
+ul {
+    list-style: none;
+}
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+main {
+    width: 60%;
+    border: 1px solid #333333;
+}
+.Table_of_Contents {
+    width: 20%;
+    height: auto;
+}
+.right {
+    width: 20%;
+    height: auto;
+}
+.item_list {
+    margin-bottom: 1em;
+}
+
+.discription {
+    color: #333333;
+    padding-left: 2rem;
+    margin-bottom: 0.4em;
+}
+
+.discription_parameter {
+    margin-top: 0.3em;
+    margin-left: 10px;
+}
+
+.list_arguments {
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.type_arguments{
+    height: 100%;
+    font-weight: 600;
+    padding: 0.3em 5px 0 2rem;
+}
+
+.discription_arguments {
+    height: 100%;
+    padding: 0.3em 5px 0 5px;
+}
+
+.argument {
+    font-weight: 600;
+}
+
+.info_argument {
+    margin: 0.4em 0;
+    color: #333333;
+}
+
+.code {
+    font-weight: 700;
+    margin: 0 0 0.5em 0;
+    padding: 0.2em 0 0.2em 1em;
+    font-family: monospace;
+}
+
+.important {
+    font-weight: 800;
+}
+
+.method, .error {
+    color: #e83e8c;
+}
+
+.parameter {
+    font-style: italic;
+}
