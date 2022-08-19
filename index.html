@@ -6,265 +6,314 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/wikipedia.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
     <header>
         <div class="logotype"></div>
         <div class="menu">
-            <span>Главная</span>
+            <nav class="menu-nav">
+                <div class="home">
+                    <a class="link" aria-current="page" href="#">Главная</a>
+                </div>
+                <div class="other_project">
+                    <a class="link" href="#">Другие проекты</a>
+                </div>
+                <div class="support_the_project">
+                    <a class="link" href="#">Поддержать проект</a>
+                </div>
+            </nav>
         </div>
-        <div class="social_network"></div>
+        <div class="social-network">
+            <div class="social-network-link">
+                <a href="https://t.me/DataScience_Programming" target="_blank" title="telegram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-telegram" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                    </svg>
+                </a>
+            </div>
+            <div class="social-network-link">
+                <a href="https://github.com/kirillv11" target="_blank" title="github">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
     </header>
     <div class="content">
-        <div class="Table_of_Contents">
-            <div>
+        <div class="side-panel">
+            <div class="table-of-contents">    
                 Содержание
                 <ul>
-                    <li><a href="#FunctionClasses">Функции и Классы</a></li>
-                    <li><a href="#Exceptions">Исключения</a></li>
+                    <li><a class="link" href="#FunctionClasses">Функции и Классы</a></li>
+                    <li><a class="link" href="#Exceptions">Исключения</a></li>
                 </ul>
             </div>
         </div>
         <main>
-            <h1>
-                Документация Python Wikipedia
-            </h1>
-            <h2><a id="FunctionClasses">Функции и Классы</a></h2>
-            <div class="item_list">
-                <span class="code important">wikipedia.<span class="method">search</span>(<span class="parameter">query, results = 10, suggestion = False</span>)</span><br>
-                <div class="discription_parameter">
-                    <p class="discription">Выполняет поиск в Википедии по запросу (query)</p>
-                    <div class="list_arguments">
-                        <div class="type_arguments">
-                            Параметры:
-                        </div>
-                        <div class="discription_arguments">
-                            <span class="argument">results : int</span>
-                            <p class="info_argument">Максимальное количество возвращенных результатов.</p>
-                            <span class="argument">suggestion : bool</span>
-                            <p class="info_argument">Если значение True, вернёт результат и предложения (если таковые имеются) в виде кортежа.</p>  
+            <div class="name-documentation">
+                <h1>
+                    Документация Python Wikipedia
+                </h1>
+            </div>
+            <div class="main-content">
+                <h2><a id="FunctionClasses">Функции и Классы</a></h2>
+            
+                <div class="item_list">
+                    <span class="code">wikipedia.<span class="method">search</span>(<span class="parameter">query, results = 10, suggestion = False</span>)</span><br>
+                    <div class="discription_parameter">
+                        <p class="discription">Выполняет поиск в Википедии по запросу (<span class="parameter">query</span>)</p>
+                        <div class="list_arguments">
+                            <div class="type_arguments">
+                                Параметры:
+                            </div>
+                            <div class="discription_arguments">
+                                <span class="argument">results : int</span>
+                                <p class="info_argument">Максимальное количество возвращенных результатов.</p>
+                                <span class="argument">suggestion : bool</span>
+                                <p class="info_argument">Если значение True, вернёт результат и предложения (если таковые имеются) в виде кортежа.</p>  
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="item_list">
-                <span class="code">wikipedia.<span class="method">suggest</span>(<span class="parameter">query</span>)</span><br>
-                <div class="discription_parameter">
-                    <p class="discription">Возвращает предложение для поиска в Википедии по запросу query. Возвращает строку или None, если предложение не найдено.</p>
+                <div class="item_list">
+                    <span class="code">wikipedia.<span class="method">suggest</span>(<span class="parameter">query</span>)</span><br>
+                    <div class="discription_parameter">
+                        <p class="discription">Возвращает предложение для поиска в Википедии по запросу query. Возвращает строку или None, если предложение не найдено.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="item_list">
-                <span class="code">wikipedia.<span class="method">summary</span>(<span class="parameter">query, sentences=0, chars=0, auto_suggest=True, redirect=True</span>)</span><br>
-                <div class="discription_parameter">
-                    <p class="discription">Краткое описание страницы в виде обычного текста.</p>
-                    <div class="list_arguments">
-                        <div class="type_arguments">
-                            Параметры:
-                        </div>
-                        <div class="discription_arguments">
-                            <span class="argument">sentences : int</span>
-                            <p class="info_argument">если задано, вернёт первые предложения (их может быть не более 10).</p>
-                            <span class="argument">chars : int</span>
-                            <p class="info_argument">если задано, возвращайте только первые символы символов (фактический возвращаемый текст может быть немного длиннее).</p>  
-                            <span class="argument">auto_suggest : bool</span>
-                            <p class="info_argument">пусть Википедия найдет допустимое название страницы для запроса</p>
-                            <span class="argument">redirect : bool</span>
-                            <p class="info_argument">разрешить перенаправление, не вызывая <span class="error">RedirectError</span>.</p>
+                <div class="item_list">
+                    <span class="code">wikipedia.<span class="method">summary</span>(<span class="parameter">query, sentences=0, chars=0, auto_suggest=True, redirect=True</span>)</span><br>
+                    <div class="discription_parameter">
+                        <p class="discription">Краткое описание страницы в виде обычного текста.</p>
+                        <div class="list_arguments">
+                            <div class="type_arguments">
+                                Параметры:
+                            </div>
+                            <div class="discription_arguments">
+                                <span class="argument">sentences : int</span>
+                                <p class="info_argument">если задано, вернёт первые предложения (их может быть не более 10).</p>
+                                <span class="argument">chars : int</span>
+                                <p class="info_argument">если задано, возвращайте только первые символы символов (фактический возвращаемый текст может быть немного длиннее).</p>  
+                                <span class="argument">auto_suggest : bool</span>
+                                <p class="info_argument">пусть Википедия найдет допустимое название страницы для запроса</p>
+                                <span class="argument">redirect : bool</span>
+                                <p class="info_argument">разрешить перенаправление, не вызывая <span class="error">RedirectError</span>.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="item_list">
-                <span class="code">wikipedia.<span class="method">page</span>(<span class="parameter">title=None, pageid=None, auto_suggest=True, redirect=True, preload=False</span>)</span><br>
-                <div class="discription_parameter">
-                    <p class="discription">Получите объект WikipediaPage для страницы с заголовком title или pageid pageid (взаимоисключающие).</p>
-                    <div class="list_arguments">
-                        <div class="type_arguments">
-                            Параметры:
-                        </div>
-                        <div class="discription_arguments">
-                            <span class="argument">title : Any</span>
-                            <p class="info_argument">заголовок страницы для загрузки</p>
-                            <span class="argument">pageid : Any</span>
-                            <p class="info_argument">числовой идентификатор страницы для загрузки</p>
-                            <span class="argument">auto_suggest : bool</span>
-                            <p class="info_argument">пусть Википедия найдет допустимое название страницы для запроса</p>
-                            <span class="argument">redirect : bool</span>
-                            <p class="info_argument">разрешить перенаправление, не вызывая <span class="error">RedirectError</span></p>
-                            <span class="argument">preload : bool</span>
-                            <p class="info_argument">загружайте содержимое, сводку, изображения, ссылки и ссылки во время инициализации</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item_list">
-                <span class="code">wikipedia.<span class="method">geosearch</span>(<span class="parameter">latitude, longitude, title=None, results=10, radius=1000</span>)</span><br>
-                <div class="discription_parameter">
-                    <p class="discription">Выполните геопоиск в Википедии по широте и долготе, используя HTTP API, описанный в http://www.mediawiki.org/wiki/Extension:GeoData</p>
-                    <div class="list_arguments">
-                        <div class="type_arguments">
-                            Параметры:
-                        </div>
-                        <div class="discription_arguments">
-                            <span class="argument">latitude : float or decimal.Decimal</span>
-                            <p class="info_argument">Широта</p>
-                            <span class="argument">longitude : float or decimal.Decimal</span>
-                            <p class="info_argument">Долгота</p>
-                            <span class="argument">title : Any</span>
-                            <p class="info_argument">Название статьи для поиска</p>
-                            <span class="argument">results : int</span>
-                            <p class="info_argument">максимальное количество возвращаемых результатов</p>
-                            <span class="argument">radius : int</span>
-                            <p class="info_argument">Радиус поиска в метрах. Значение должно быть в диапазоне от 10 до 10000</p>
+                <div class="item_list">
+                    <span class="code">wikipedia.<span class="method">page</span>(<span class="parameter">title=None, pageid=None, auto_suggest=True, redirect=True, preload=False</span>)</span><br>
+                    <div class="discription_parameter">
+                        <p class="discription">Получите объект WikipediaPage для страницы с заголовком title или pageid pageid (взаимоисключающие).</p>
+                        <div class="list_arguments">
+                            <div class="type_arguments">
+                                Параметры:
+                            </div>
+                            <div class="discription_arguments">
+                                <span class="argument">title : Any</span>
+                                <p class="info_argument">заголовок страницы для загрузки</p>
+                                <span class="argument">pageid : Any</span>
+                                <p class="info_argument">числовой идентификатор страницы для загрузки</p>
+                                <span class="argument">auto_suggest : bool</span>
+                                <p class="info_argument">пусть Википедия найдет допустимое название страницы для запроса</p>
+                                <span class="argument">redirect : bool</span>
+                                <p class="info_argument">разрешить перенаправление, не вызывая <span class="error">RedirectError</span></p>
+                                <span class="argument">preload : bool</span>
+                                <p class="info_argument">загружайте содержимое, сводку, изображения, ссылки и ссылки во время инициализации</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="item_list">
-                <span><span class="parameter">class</span><span class="code">wikipedia.<span class="method">WikipediaPage</span>(<span class="parameter">title=None, pageid=None, redirect=True, preload=False, original_title=u''</span>)</span></span><br>
-                <div class="discription_parameter">
-                    <p class="discription">Содержит данные со страницы Википедии. Использует методы свойств для фильтрации данных из необработанного HTML-кода.</p>
-                    <div class="list_arguments">
-                        <div class="type_arguments">
-                            Параметры:
-                        </div>
-                        <div class="discription_arguments">
-                            <span class="argument">categories</span>
-                            <p class="info_argument">Список категорий страницы.</p>
-                            <span class="argument">content</span>
-                            <p class="info_argument">Текстовое содержимое страницы, за исключением изображений, таблиц и других данных.</p>
-                            <span class="argument">coordinates</span>
-                            <p class="info_argument">Кортеж десятичных знаков в виде (lat, lon) или None</p>
-                            <span class="argument">html()</span>
-                            <p class="info_argument">Получить полный HTML-код страницы.</p>
-                            <!--Предупреждение  Это может быть довольно медленным на длинных страницах.-->
-                            <span class="argument">images</span>
-                            <p class="info_argument">Список URL-адресов изображений на странице.</p>
-                            <span class="argument">links</span>
-                            <p class="info_argument">Список названий ссылок на страницы Википедии на странице.</p>
-                            <!--Примечание Включает только статьи из пространства имен 0, что означает отсутствие категории, обсуждения пользователей или других мета-страниц Википедии.-->
-                            <span class="argument">parent_id</span>
-                            <p class="info_argument">Идентификатор редакции родительской версии текущей редакции этой страницы. Дополнительные сведения см. в разделе revision_id.</p>
-                            <span class="argument">references</span>
-                            <p class="info_argument">Список URL-адресов внешних ссылок на странице. Может содержать внешние ссылки внутри страницы, которые технически нигде не цитируются.</p>
-                            <span class="argument">revision_id</span>
-                            <p class="info_argument">Идентификатор редакции страницы.</p>
-                            <p class="info_argument">Идентификатор редакции - это число, которое однозначно идентифицирует текущую версию страницы. Его можно использовать для создания постоянной ссылки или для других прямых вызовов API. Дополнительные сведения см. в разделе Справка: История страниц.</p>
-                            <span class="argument">section(section_title)</span>
-                            <p class="info_argument">Получите текстовое содержимое раздела из self.sections. Возвращает None, если section_title не найден, в противном случае возвращает строку без пробелов.</p>
-                            <p class="info_argument">Это удобный метод, который оборачивает self.content.</p>
-                            <!--Предупреждение Вызов section для раздела, имеющего подзаголовки, не вернет полный текст всех подразделов. Он получает только текст между section_title и следующим подзаголовком, который часто бывает пустым.-->
-                            <span class="argument">sections</span>
-                            <p class="info_argument">Список названий разделов из оглавления на странице.</p>
-                            <span class="argument">summary</span>
-                            <p class="info_argument">Краткое описание страницы в виде обычного текста.</p>
-                            <span class="argument">revision_id</span>
-                            <p class="info_argument">Получить полный HTML-код страницы.</p>
+                <div class="item_list">
+                    <span class="code">wikipedia.<span class="method">geosearch</span>(<span class="parameter">latitude, longitude, title=None, results=10, radius=1000</span>)</span><br>
+                    <div class="discription_parameter">
+                        <p class="discription">Выполните геопоиск в Википедии по широте и долготе, используя HTTP API, описанный в http://www.mediawiki.org/wiki/Extension:GeoData</p>
+                        <div class="list_arguments">
+                            <div class="type_arguments">
+                                Параметры:
+                            </div>
+                            <div class="discription_arguments">
+                                <span class="argument">latitude : float or decimal.Decimal</span>
+                                <p class="info_argument">Широта</p>
+                                <span class="argument">longitude : float or decimal.Decimal</span>
+                                <p class="info_argument">Долгота</p>
+                                <span class="argument">title : Any</span>
+                                <p class="info_argument">Название статьи для поиска</p>
+                                <span class="argument">results : int</span>
+                                <p class="info_argument">максимальное количество возвращаемых результатов</p>
+                                <span class="argument">radius : int</span>
+                                <p class="info_argument">Радиус поиска в метрах. Значение должно быть в диапазоне от 10 до 10000</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="item_list">
-                <span class="code">wikipedia.<span class="method">languages</span>()</span><br>
-                <div class="discription_parameter">
-                    <p class="discription">все поддерживаемые в настоящее время языковые префиксы (обычно код языка ISO).</p>
-                    <p class="discription">Может быть введен в set_lang для изменения Mediawiki, из которого википедия запрашивает результаты.</p>
-                    <p class="discription">Возвращает: dict пар prefix: local_lang_name. Чтобы получить просто список префиксов, воспользуйтесь wikipedia.languages().keys().</p>
-                </div> 
-            </div>
-            <div class="item_list">
-                <span class="code">wikipedia.<span class="method">set_lang</span>(prefix)</span><br>
-                <p class="discription">Измените язык запрашиваемого API. Установите префикс на один из двух буквенных префиксов, найденных в списке всех Википедий.</p>
-                <p class="discription">После настройки языка кэш для поиска, предложений и сводки будет очищен.</p>
-            </div>
-            <!--Примечание Убедитесь, что вы выполняете поиск названий страниц на заданном вами языке.-->
-            <div class="item_list">
-                <span class="code">wikipedia.<span class="method">set_rate_limiting</span>(<span class="parameter">rate_limit, min_wait=datetime.timedelta(0, 0, 50000)</span>)</span><br>
-                <div class="discription_parameter">
-                    <p class="discription">Включить или отключить ограничение скорости запросов к серверам Mediawiki. Если ограничение скорости не включено, при некоторых обстоятельствах (в зависимости от загрузки Википедии, количества запросов, которые делаете вы и другие пользователи википедии, и других факторов) Википедия может возвращать ошибку HTTP timeout.</p>
-                    <p class="discription">Включение ограничения скорости обычно предотвращает эту проблему, но, пожалуйста, обратите внимание, что HTTPTimeoutError все еще может быть вызван.</p>
-                    <div class="list_arguments">
-                        <div class="type_arguments">
-                            Параметры:
-                        </div>
-                        <div class="discription_arguments">
-                            <span class="argument">rate_limit : bool</span>
-                            <p class="info_argument">следует ли включать ограничение скорости или нет</p>
-                            <span class="argument">min_wait : timedelta</span>
-                            <p class="info_argument">
-                                Если включено ограничение скорости, min_wait - это timedelta, описывающая минимальное время ожидания перед запросами.
-                                По умолчанию используется значение timedelta(milliseconds=50).
-                            </p>
+                <div class="item_list">
+                    <span><span class="code"><span class="parameter">class</span> wikipedia.<span class="method">WikipediaPage</span>(<span class="parameter">title=None, pageid=None, redirect=True, preload=False, original_title=u''</span>)</span></span><br>
+                    <div class="discription_parameter">
+                        <p class="discription">Содержит данные со страницы Википедии. Использует методы свойств для фильтрации данных из необработанного HTML-кода.</p>
+                        <div class="list_arguments">
+                            <div class="type_arguments">
+                                Параметры:
+                            </div>
+                            <div class="discription_arguments">
+                                <span class="argument">categories</span>
+                                <p class="info_argument">Список категорий страницы.</p>
+                                <span class="argument">content</span>
+                                <p class="info_argument">Текстовое содержимое страницы, за исключением изображений, таблиц и других данных.</p>
+                                <span class="argument">coordinates</span>
+                                <p class="info_argument">Кортеж десятичных знаков в виде (lat, lon) или None</p>
+                                <span class="argument">html()</span>
+                                <p class="info_argument">Получить полный HTML-код страницы.</p>
+                                <div class="alert alert-warning" role="alert" style="max-width: 60em; border-left: 0.3em solid #ffde78;">
+                                    <svg style="margin-top: -0.3em; margin-right: 0.2em;" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                                    </svg>
+                                    Это может быть довольно медленным на длинных страницах.
+                                </div>
+                                <!--Предупреждение  Это может быть довольно медленным на длинных страницах.-->
+                                <span class="argument">images</span>
+                                <p class="info_argument">Список URL-адресов изображений на странице.</p>
+                                <span class="argument">links</span>
+                                <p class="info_argument">Список названий ссылок на страницы Википедии на странице.</p>
+                                <div class="alert alert-secondary" role="alert" style="max-width: 60em; border-left: 0.3em solid #818181;">
+                                    <svg style="margin-top: -0.3em; margin-right: 0.2em;" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-info-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                        <path d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533L8.93 6.588zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+                                      </svg>
+                                      Включает только статьи из пространства имен 0, что означает отсутствие категории, обсуждения пользователей или других мета-страниц Википедии.
+                                </div>
+                                <!--Примечание Включает только статьи из пространства имен 0, что означает отсутствие категории, обсуждения пользователей или других мета-страниц Википедии.-->
+                                <span class="argument">parent_id</span>
+                                <p class="info_argument">Идентификатор редакции родительской версии текущей редакции этой страницы. Дополнительные сведения см. в разделе revision_id.</p>
+                                <span class="argument">references</span>
+                                <p class="info_argument">Список URL-адресов внешних ссылок на странице. Может содержать внешние ссылки внутри страницы, которые технически нигде не цитируются.</p>
+                                <span class="argument">revision_id</span>
+                                <p class="info_argument">Идентификатор редакции страницы.</p>
+                                <p class="info_argument">Идентификатор редакции - это число, которое однозначно идентифицирует текущую версию страницы. Его можно использовать для создания постоянной ссылки или для других прямых вызовов API. Дополнительные сведения см. в разделе Справка: История страниц.</p>
+                                <span class="argument">section(section_title)</span>
+                                <p class="info_argument">Получите текстовое содержимое раздела из self.sections. Возвращает None, если section_title не найден, в противном случае возвращает строку без пробелов.</p>
+                                <p class="info_argument">Это удобный метод, который оборачивает self.content.</p>
+                                <div class="alert alert-warning" role="alert" style="max-width: 60em; border-left: 0.3em solid #ffde78;">
+                                    <svg style="margin-top: -0.3em; margin-right: 0.2em;" xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-exclamation-circle" viewBox="0 0 16 16">
+                                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                                        <path d="M7.002 11a1 1 0 1 1 2 0 1 1 0 0 1-2 0zM7.1 4.995a.905.905 0 1 1 1.8 0l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 4.995z"/>
+                                    </svg>
+                                    Вызов section для раздела, имеющего подзаголовки, не вернет полный текст всех подразделов. Он получает только текст между section_title и следующим подзаголовком, который часто бывает пустым.
+                                </div>
+                                <!--Предупреждение Вызов section для раздела, имеющего подзаголовки, не вернет полный текст всех подразделов. Он получает только текст между section_title и следующим подзаголовком, который часто бывает пустым.-->
+                                <span class="argument">sections</span>
+                                <p class="info_argument">Список названий разделов из оглавления на странице.</p>
+                                <span class="argument">summary</span>
+                                <p class="info_argument">Краткое описание страницы в виде обычного текста.</p>
+                                <span class="argument">revision_id</span>
+                                <p class="info_argument">Получить полный HTML-код страницы.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="item_list">
-                <span class="code">wikipedia.<span class="method">random</span>(pages=1)</span><br>
-                <div class="discription_parameter">
-                    <p class="discription">Получите список случайных названий статей в Википедии.</p>
-                    <div class="list_arguments">
-                        <div class="type_arguments">
-                            Параметры:
-                        </div>
-                        <div class="discription_arguments">
-                            <span class="argument">pages : int</span>
-                            <p class="info_argument">количество возвращенных случайных страниц (не более 10)</p>
+                <div class="item_list">
+                    <span class="code">wikipedia.<span class="method">languages</span>()</span><br>
+                    <div class="discription_parameter">
+                        <p class="discription">все поддерживаемые в настоящее время языковые префиксы (обычно код языка ISO).</p>
+                        <p class="discription">Может быть введен в set_lang для изменения Mediawiki, из которого википедия запрашивает результаты.</p>
+                        <p class="discription">Возвращает: dict пар prefix: local_lang_name. Чтобы получить просто список префиксов, воспользуйтесь wikipedia.languages().keys().</p>
+                    </div> 
+                </div>
+                <div class="item_list">
+                    <span class="code">wikipedia.<span class="method">set_lang</span>(prefix)</span><br>
+                    <p class="discription">Измените язык запрашиваемого API. Установите префикс на один из двух буквенных префиксов, найденных в списке всех Википедий.</p>
+                    <p class="discription">После настройки языка кэш для поиска, предложений и сводки будет очищен.</p>
+                </div>
+                <!--Примечание Убедитесь, что вы выполняете поиск названий страниц на заданном вами языке.-->
+                <div class="item_list">
+                    <span class="code">wikipedia.<span class="method">set_rate_limiting</span>(<span class="parameter">rate_limit, min_wait=datetime.timedelta(0, 0, 50000)</span>)</span><br>
+                    <div class="discription_parameter">
+                        <p class="discription">Включить или отключить ограничение скорости запросов к серверам Mediawiki. Если ограничение скорости не включено, при некоторых обстоятельствах (в зависимости от загрузки Википедии, количества запросов, которые делаете вы и другие пользователи википедии, и других факторов) Википедия может возвращать ошибку HTTP timeout.</p>
+                        <p class="discription">Включение ограничения скорости обычно предотвращает эту проблему, но, пожалуйста, обратите внимание, что HTTPTimeoutError все еще может быть вызван.</p>
+                        <div class="list_arguments">
+                            <div class="type_arguments">
+                                Параметры:
+                            </div>
+                            <div class="discription_arguments">
+                                <span class="argument">rate_limit : bool</span>
+                                <p class="info_argument">следует ли включать ограничение скорости или нет</p>
+                                <span class="argument">min_wait : timedelta</span>
+                                <p class="info_argument">
+                                    Если включено ограничение скорости, min_wait - это timedelta, описывающая минимальное время ожидания перед запросами.
+                                    По умолчанию используется значение timedelta(milliseconds=50).
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="item_list">
-                <span class="code">wikipedia.<span class="method">donate</span>()</span><br>
-                <div class="discription_parameter">
-                    <p class="discription">Откроет страницу пожертвований Wikimedia в вашем любимом браузере.</p>
+                <div class="item_list">
+                    <span class="code">wikipedia.<span class="method">random</span>(pages=1)</span><br>
+                    <div class="discription_parameter">
+                        <p class="discription">Получите список случайных названий статей в Википедии.</p>
+                        <div class="list_arguments">
+                            <div class="type_arguments">
+                                Параметры:
+                            </div>
+                            <div class="discription_arguments">
+                                <span class="argument">pages : int</span>
+                                <p class="info_argument">количество возвращенных случайных страниц (не более 10)</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
+                <div class="item_list">
+                    <span class="code">wikipedia.<span class="method">donate</span>()</span><br>
+                    <div class="discription_parameter">
+                        <p class="discription">Откроет страницу пожертвований Wikimedia в вашем любимом браузере.</p>
+                    </div>
+                </div>
 
-            <h2><a id="Exceptions">Исключения</a></h2>
-
-            <h4>Global wikipedia exception and warning classes.</h4>
-            <div>
-                <span class="code"><span class="error">exception</span> wikipedia.exceptions.<span class="method">DisambiguationError</span>(<span class="parameter">title, may_refer_to</span>)</span><br>
-                <div class="discription_parameter">
-                    <p class="discription">Exception raised when a page resolves to a Disambiguation page.</p>
-                    <p class="discription">The options property contains a list of titles of Wikipedia pages that the query may refer to.</p>
+                <h2><a id="Exceptions">Глобальные классы исключений и предупреждений википедии.</a></h2>
+                <div>
+                    <span class="code"><span class="error">exception</span> wikipedia.exceptions.<span class="method">DisambiguationError</span>(<span class="parameter">title, may_refer_to</span>)</span><br>
+                    <div class="discription_parameter">
+                        <p class="discription">Исключение возникает, когда страница преобразуется в страницу устранения неоднозначности.</p>
+                        <p class="discription">Свойство options содержит список названий страниц Википедии, на которые может ссылаться запрос.</p>
+                    </div>
+                    <!--Note options does not include titles that do not link to a valid Wikipedia page.-->
                 </div>
-                <!--Note options does not include titles that do not link to a valid Wikipedia page.-->
-            </div>
-            <div>
-                <span class="code"><span class="error">exception</span> wikipedia.exceptions.<span class="method">HTTPTimeoutError</span>(<span class="parameter">query</span>)</span><br>
-                <div class="discription_parameter">
-                    <p class="discription">Exception raised when a request to the Mediawiki servers times out.</p>
+                <div>
+                    <span class="code"><span class="error">exception</span> wikipedia.exceptions.<span class="method">HTTPTimeoutError</span>(<span class="parameter">query</span>)</span><br>
+                    <div class="discription_parameter">
+                        <p class="discription">Исключение возникает, когда время ожидания запроса к серверам Mediawiki истекает.</p>
+                    </div>
                 </div>
-            </div>
-            <div>
-                <span class="code"><span class="error">exception</span> wikipedia.exceptions.<span class="method">PageError</span>(<span class="parameter">pageid=None, *args</span>)</span><br>
-                <div class="discription_parameter">
-                    <p class="discription">Exception raised when no Wikipedia matched a query.</p>
+                <div>
+                    <span class="code"><span class="error">exception</span> wikipedia.exceptions.<span class="method">PageError</span>(<span class="parameter">pageid=None, *args</span>)</span><br>
+                    <div class="discription_parameter">
+                        <p class="discription">Исключение возникает, когда ни одна Википедия не соответствует запросу.</p>
+                    </div>
+                    
                 </div>
-                
-            </div>
-            <div>
-                <span class="code"><span class="error">exception</span> wikipedia.exceptions.<span class="method">RedirectError</span>(<span class="parameter">title</span>)</span><br>
-                <div class="discription_parameter">
-                    <p class="discription">Exception raised when a page title unexpectedly resolves to a redirect.</p>
+                <div>
+                    <span class="code"><span class="error">exception</span> wikipedia.exceptions.<span class="method">RedirectError</span>(<span class="parameter">title</span>)</span><br>
+                    <div class="discription_parameter">
+                        <p class="discription">Исключение возникает, когда заголовок страницы неожиданно преобразуется в перенаправление.</p>
+                    </div>
+                    
                 </div>
-                
-            </div>
-            <div>
-                <span class="code"><span class="error">exception</span> wikipedia.exceptions.<span class="method">WikipediaException</span>(<span class="parameter">error</span>)</span><br>
-                <div class="discription_parameter">
-                    <p class="discription">Base Wikipedia exception class.</p>
+                <div>
+                    <span class="code"><span class="error">exception</span> wikipedia.exceptions.<span class="method">WikipediaException</span>(<span class="parameter">error</span>)</span><br>
+                    <div class="discription_parameter">
+                        <p class="discription">Базовый класс исключений Википедии.</p>
+                    </div>
                 </div>
             </div>
         </main>
-        <div class="right">
-
-        </div>
     </div>
     <!-- <footer>
             
     </footer> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script/script.js"></script>
 </body>
 </html>
